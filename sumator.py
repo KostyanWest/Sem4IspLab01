@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+"""Sumator
+
+This script contains a single function that continually
+reads numbers from STDIN and sums them up.
+"""
+
 import logging
 
 
@@ -5,19 +12,27 @@ logging.basicConfig(level=logging.INFO)
 
 
 def main():
+    """ Main function containing infinite loop """
+
     total_sum = 0
+
     logging.info("Enter numbers to sum ('quit' or 'exit' to exit).")
     while True:
         input_text = input()
-        if (input_text == "exit" or input_text == "quit"):
+
+        if input_text in ("exit", "quit"):
             break
+
         try:
             total_sum += int(input_text)
-            logging.info("Sum: {0}".format(total_sum))
         except ValueError:
             logging.error("It's not a number!")
+        else:
+            logging.info("Sum: %d", total_sum)
 
 
 if __name__ == "__main__":
-    main()
-
+    try:
+        main()
+    except KeyboardInterrupt:
+        pass
