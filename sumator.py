@@ -1,11 +1,23 @@
-s = 0
-print( "Enter numbers to sum (0 is exit)." )
-while True:
-    try:
-        t = int( input() )
-        if t == 0:
+import logging
+
+
+logging.basicConfig(level=logging.INFO)
+
+
+def main():
+    total_sum = 0
+    logging.info("Enter numbers to sum ('quit' or 'exit' to exit).")
+    while True:
+        input_text = input()
+        if (input_text == "exit" or input_text == "quit"):
             break
-        s = s + t
-        print( "Sum: {0}".format(s) )
-    except Exception:
-        print( "It's not a number!" )
+        try:
+            total_sum += int(input_text)
+            logging.info("Sum: {0}".format(total_sum))
+        except ValueError:
+            logging.error("It's not a number!")
+
+
+if __name__ == "__main__":
+    main()
+
