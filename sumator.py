@@ -8,7 +8,7 @@ reads numbers from STDIN and sums them up.
 import logging
 
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, format="%(message)s")
 
 
 def main():
