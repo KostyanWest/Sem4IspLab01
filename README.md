@@ -8,36 +8,34 @@
 Ссылки / Шпаргалки
 ------------------
 
-Установка docker'а:
+### Linux
 
-https://www.digitalocean.com/community/tutorials/docker-ubuntu-18-04-1-ru
+* Общие сведения о UNIX:
+  * https://www.opennet.ru/docs/RUS/unix_basic/
 
-***
+### Docker
 
-Цикл статей по docker'у, в частности, статья про Dockerfile:
+* Установка docker'а:
+  * https://www.digitalocean.com/community/tutorials/docker-ubuntu-18-04-1-ru
 
-https://habr.com/ru/company/ruvds/blog/439980/
+* Цикл статей по docker'у, в частности, статья про Dockerfile:
+  * https://habr.com/ru/company/ruvds/blog/439980/
 
-***
+* Легковесный образ для питона:
+  * `python:3.7.2-alpine3.8`
 
-Легковесный образ для питона:
+### Git
 
-`python:3.7.2-alpine3.8`
+* Краткий и понятный гайд по Git:
+  * https://githowto.com/ru
 
-***
+* Электронная книга по Git:
+  * https://git-scm.com/book/ru/v2/
 
-Краткий и понятный гайд по Git:
+### Python
 
-https://githowto.com/ru
+* Введение в python:
+  * https://pythonworld.ru/samouchitel-python
 
-***
-
-Введение в python:
-
-https://pythonworld.ru/samouchitel-python
-
-***
-
-Справочные сведения по python:
-
-https://docs.python.org/3/library/
+* Справочные сведения по python:
+  * https://docs.python.org/3/library/
