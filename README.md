@@ -4,6 +4,7 @@
 Описание
 --------
 Репозиторий предназначен для сдачи лабораторной работы №1 по ИСП.
+Ссылка на Dockerhub: https://hub.docker.com/repository/docker/kostyanwest/python-alpine
 
 Ссылки / Шпаргалки
 ------------------
