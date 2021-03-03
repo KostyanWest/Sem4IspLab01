@@ -1,11 +1,38 @@
-s = 0
-print( "Enter numbers to sum (0 is exit)." )
-while True:
-    try:
-        t = int( input() )
-        if t == 0:
+#!/usr/bin/env python3
+"""Sumator
+
+This script contains a single function that continually
+reads numbers from STDIN and sums them up.
+"""
+
+import logging
+
+
+logging.basicConfig(level=logging.INFO, format="%(message)s")
+
+
+def main():
+    """ Main function containing infinite loop """
+
+    total_sum = 0
+
+    logging.info("Enter numbers to sum ('quit' or 'exit' to exit).")
+    while True:
+        input_text = input()
+
+        if input_text in ("exit", "quit"):
             break
-        s = s + t
-        print( "Sum: {0}".format(s) )
-    except Exception:
-        print( "It's not a number!" )
+
+        try:
+            total_sum += int(input_text)
+        except ValueError:
+            logging.error("It's not a number!")
+        else:
+            logging.info("Sum: %d", total_sum)
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        pass
